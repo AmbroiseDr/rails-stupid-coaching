@@ -1,16 +1,21 @@
 <h1>Stupid Coaching</h1>
 
-<h3><%= @question %></h3>
-<h4> - You</h4>
 
-<% if @question == "I am going to work" %>
-  <h3>Great !</h3>
-  <% elsif @question.match(/\?/) %>
-  <h3>Silly question, get dressed and go to work!</h3>
-  <% else %>
-  <h3>I don't care, get dressed and go to work!</h3>
-<% end %>
-<h4> - Your coach</h4>
+<div id = "question">
+  <p><%= @question %></p>
+  <p class = "author"> - You</p>
+</div>
+
+<div id = answer>
+  <% if @question == "I am going to work" %>
+    <p>Great !</p>
+    <% elsif @question.match(/\?/) %>
+    <p>Silly question, get dressed and go to work!</p>
+    <% else %>
+    <p>I don't care, get dressed and go to work!</p>
+  <% end %>
+  <p class = "author"> - Your coach</p>
+</div>
 
 
 <%=   link_to "Ask a new question", :ask %>

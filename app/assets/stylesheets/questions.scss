@@ -1,3 +1,29 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #F4F4F4;
+
+body {
+  background: $gray; // Using this variable
+  font-family: helvetica;
+  margin: 30px;
+}
+
+.author {
+  font-style:italic;
+}
+
+
+#answer {
+  padding-left: 10px;
+  background: #F8F7C2;
+  text-align: left;
+  border-left: solid;
+  border-left-width:5px;
+  border-left-color: gray;
+}
+
+#question{
+  border-left-width:5px;
+  padding-left: 10px;
+}
